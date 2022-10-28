@@ -17,7 +17,6 @@
         "squizlabs/php_codesniffer": "^3.7",
         "enlightn/security-checker": "*",
         "php-http/mock-client": "^1.5",
-        "roave/security-advisories": "dev-latest",
         "phpstan/phpstan": "^1.8",
         "friendsofphp/php-cs-fixer": "^3.12",
         "phpmetrics/phpmetrics": "^2.7",
