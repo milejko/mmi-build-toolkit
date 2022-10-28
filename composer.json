@@ -1,5 +1,5 @@
 {
-    "name": "milejko/mmi-build-toolkit",
+    "name": "mmi/mmi-build-toolkit",
     "license": "MIT",
     "type": "project",
     "description": "Build toolkit for mmi class applications",
