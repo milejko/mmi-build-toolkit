@@ -3,6 +3,7 @@
 #
 # 1. Install Nix: `sh <(curl -L https://nixos.org/nix/install)`
 # 2. Run command: `nix-shell`
+# 3. Run composer commands ie. composer test:all
 
 { pkgs ? import <nixpkgs> {}}:
 
