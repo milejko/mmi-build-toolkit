@@ -4,7 +4,7 @@
     "type": "project",
     "description": "Build toolkit for mmi class applications",
     "require": {
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^12.0",
         "phpmd/phpmd": "2.13.*",
         "squizlabs/php_codesniffer": "^3.7",
         "enlightn/security-checker": "*",
