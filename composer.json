@@ -11,8 +11,7 @@
         "php-http/mock-client": "^1.5",
         "phpstan/phpstan": "^1.8",
         "friendsofphp/php-cs-fixer": "^3.12",
-        "phpmetrics/phpmetrics": "^2.7",
-        "infection/infection": "^0.26.15"
+        "infection/infection": "^0.29"
     },
     "scripts": {
         "start": "php -S localhost:8080 -t web",
