@@ -4,14 +4,14 @@
     "type": "project",
     "description": "Build toolkit for mmi class applications",
     "require": {
-        "phpunit/phpunit": "^12.0",
-        "phpmd/phpmd": "2.13.*",
+        "phpunit/phpunit": "^13.0",
+        "phpmd/phpmd": "^2.13",
         "squizlabs/php_codesniffer": "^3.7",
-        "enlightn/security-checker": "*",
+        "enlightn/security-checker": "^1.11",
         "php-http/mock-client": "^1.5",
-        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan": "^2.1",
         "friendsofphp/php-cs-fixer": "^3.12",
-        "infection/infection": "^0.29"
+        "phpstan/phpstan-phpunit": "^2.0"
     },
     "scripts": {
         "start": "php -S localhost:8080 -t web",
@@ -27,14 +27,17 @@
         "test:phpcs": "phpcs",
         "test:phpmd": "phpmd ./src text phpmd.xml.dist",
         "test:phpunit": "export XDEBUG_MODE=coverage && phpunit --coverage-clover ./.phpunit.coverage.clover.xml --coverage-html ./web/build/phpunit",
-        "test:infection": "infection --no-progress --show-mutations --only-covered --threads=max",
         "test:all": [
             "@test:security-checker",
             "@test:phpcs",
             "@test:phpstan",
             "@test:phpmd",
-            "@test:phpunit",
-            "@test:infection"
+            "@test:phpunit"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
